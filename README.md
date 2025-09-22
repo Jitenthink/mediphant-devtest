@@ -16,6 +16,13 @@ mediphant-devtest/
 │   │   └── page.tsx          # Homepage
 │   ├── src/lib/              # Utility functions and tests
 │   └── package.json
+├── mobile/                 # Android Kotlin/Jetpack Compose app
+│   ├── app/src/main/java/com/base/mediphantdevtest/
+│   │   └── MainActivity.kt  # Single file with FAQ view
+│   ├── app/src/main/AndroidManifest.xml
+│   ├── app/src/main/res/xml/network_security_config.xml
+│   ├── app/build.gradle.kts
+│   └── gradle/libs.versions.toml
 ├── retrieval/              # Vector search and embeddings
 │   ├── corpus.md           # Knowledge base content
 │   ├── indexing.js         # Pinecone indexing script
@@ -52,7 +59,18 @@ Visit http://localhost:3000 to see:
 - **Interaction Checker**: `/interactions` - Check medication interactions
 - **FAQ System**: `/faq` - Ask medication questions
 
-### 3. Retrieval System
+### 3. Android Mobile App
+
+```bash
+cd mobile
+./gradlew assembleDebug
+```
+
+The APK will be generated at: `app/build/outputs/apk/debug/app-debug.apk`
+
+**Installation**: Install the APK on an Android device/emulator and ensure the web API is running on `http://localhost:3000`.
+
+### 4. Retrieval System
 
 The system supports both Pinecone and local fallback:
 
@@ -84,6 +102,13 @@ node indexing.js
 - **Response**: Synthesized answer + top matches with scores
 - **Fallback**: Cosine similarity with local embeddings
 
+### Part C: Android Native App
+- **UI**: Single `FAQView` with TextField, Button, and Text components
+- **Networking**: Ktor HTTP client with kotlinx-serialization
+- **API Integration**: Calls `/api/faq?q=query` endpoint
+- **Response Display**: Formatted JSON result with answer and matches
+- **Architecture**: Minimal single-file implementation
+
 ## 🧪 Testing
 
 **Web Application**:
@@ -101,11 +126,30 @@ npm run test:coverage # With coverage report
 
 | Component | Technology |
 |-----------|------------|
-| **Frontend** | Next.js 14, TypeScript, Tailwind CSS |
-| **Backend** | Next.js API Routes, Zod validation |
+| **Web Frontend** | Next.js 14, TypeScript, Tailwind CSS |
+| **Web Backend** | Next.js API Routes, Zod validation |
+| **Mobile App** | Kotlin, Jetpack Compose, Ktor HTTP client |
+| **Mobile Networking** | kotlinx-serialization, Android HttpClient |
 | **Vector DB** | Pinecone (with local fallback) |
 | **Embeddings** | OpenAI text-embedding-ada-002 |
-| **Testing** | Jest, XCTest |
+| **Testing** | Jest, Android Unit Tests |
+
+## 📦 Dependencies
+
+### Web Application
+- **Next.js 15.5.3** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Zod** - Runtime validation
+- **Jest** - Testing framework
+
+### Android Application
+- **Kotlin** - Programming language
+- **Jetpack Compose** - UI framework
+- **Ktor 2.3.7** - HTTP client
+- **kotlinx-serialization** - JSON serialization
+- **kotlinx-coroutines** - Asynchronous programming
+- **Material3** - Design system
 
 ## 🔒 Security & Compliance
 
@@ -124,12 +168,14 @@ npm run test:coverage # With coverage report
 - ✅ "Implement medication interaction API with Zod validation" - Created POST /api/interactions endpoint  
 - ✅ "Build React form with validation and error handling" - Developed interactions page UI
 - ✅ "Implement vector search with Pinecone and OpenAI embeddings" - Created FAQ system with fallback
-- ✅ "Add Jest tests for business logic" - Implemented unit testing
+- ✅ "Create android project kotlin composable with ktor" - Built Android app with Ktor networking
+- ✅ "API error cleartext http traffic to domain not permitted" - Fixed network security config
+- ✅ "Change the code to meet minimal requirments" - Simplified to minimal implementation
 
 **Accepted/Edited**:
-- **100% Generated**: API route structure, TypeScript interfaces
-- **Generated + Edited**: React components (adjusted styling and UX)
-- **Fully Custom**: Test cases and fallback embedding data
+- **100% Generated**: API route structure, TypeScript interfaces, Android MainActivity
+- **Generated + Edited**: React components (adjusted styling and UX), Android networking setup
+- **Fully Custom**: Test cases, fallback embedding data, network security configuration
 
 ## 📄 License
 
