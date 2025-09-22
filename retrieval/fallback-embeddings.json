@@ -1,0 +1,44 @@
+[
+  {
+    "id": "chunk-0",
+    "title": "Medication Adherence",
+    "text": "Medication adherence improves outcomes in diabetes; missed doses are a leading cause of poor control.",
+    "fullText": "Medication Adherence\nMedication adherence improves outcomes in diabetes; missed doses are a leading cause of poor control.",
+    "embedding": [0.1, -0.2, 0.3, -0.1, 0.4, 0.2, -0.3, 0.1, 0.5, -0.2, 0.3, 0.1, -0.4, 0.2, 0.3, -0.1, 0.2, 0.4, -0.3, 0.1, 0.2, -0.1, 0.3, 0.2, -0.4, 0.1, 0.3, 0.2, -0.1, 0.4]
+  },
+  {
+    "id": "chunk-1",
+    "title": "Medication Management",
+    "text": "Keep an up-to-date medication list; reconcile after every clinic or hospital visit.",
+    "fullText": "Medication Management\nKeep an up-to-date medication list; reconcile after every clinic or hospital visit.",
+    "embedding": [0.2, -0.1, 0.4, -0.2, 0.3, 0.1, -0.4, 0.2, 0.5, -0.1, 0.2, 0.3, -0.3, 0.1, 0.4, -0.2, 0.1, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.3, -0.1, 0.4, 0.2, 0.1, -0.2, 0.3]
+  },
+  {
+    "id": "chunk-2",
+    "title": "Adherence Tools",
+    "text": "Use a pill organizer or phone reminders to reduce unintentional nonadherence.",
+    "fullText": "Adherence Tools\nUse a pill organizer or phone reminders to reduce unintentional nonadherence.",
+    "embedding": [0.3, -0.4, 0.1, -0.3, 0.2, 0.4, -0.1, 0.3, 0.2, -0.4, 0.1, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.1, -0.4, 0.3, 0.2, -0.1, 0.4, 0.1, -0.3, 0.2, 0.4, 0.3, -0.2, 0.1]
+  },
+  {
+    "id": "chunk-3",
+    "title": "High-Risk Interactions",
+    "text": "High-risk interactions include anticoagulants with NSAIDs, ACE inhibitors with potassium-sparing diuretics, and metformin around contrast imaging.",
+    "fullText": "High-Risk Interactions\nHigh-risk interactions include anticoagulants with NSAIDs, ACE inhibitors with potassium-sparing diuretics, and metformin around contrast imaging.",
+    "embedding": [0.4, -0.3, 0.2, -0.4, 0.1, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.4, -0.1, 0.3, 0.2, -0.4, 0.3, 0.2, -0.1, 0.4, 0.3, -0.2, 0.1, 0.4, -0.3, 0.1, 0.2, 0.4, -0.1, 0.2]
+  },
+  {
+    "id": "chunk-4",
+    "title": "Professional Consultation",
+    "text": "When in doubt, consult a pharmacist or clinician; online lists can be incomplete.",
+    "fullText": "Professional Consultation\nWhen in doubt, consult a pharmacist or clinician; online lists can be incomplete.",
+    "embedding": [0.1, -0.4, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.4, -0.1, 0.3, 0.2, -0.4, 0.1, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.4, -0.1, 0.2, 0.3, -0.4, 0.2, 0.1, 0.3, -0.2, 0.4]
+  },
+  {
+    "id": "chunk-5",
+    "title": "Diabetes Management",
+    "text": "Proper medication timing and adherence are crucial for diabetes management and preventing complications.",
+    "fullText": "Diabetes Management\nProper medication timing and adherence are crucial for diabetes management and preventing complications.",
+    "embedding": [0.2, -0.3, 0.4, -0.1, 0.3, 0.2, -0.4, 0.1, 0.3, -0.2, 0.4, 0.1, -0.3, 0.2, 0.4, -0.1, 0.2, 0.3, -0.4, 0.1, 0.2, -0.3, 0.4, 0.2, -0.1, 0.3, 0.4, 0.2, -0.3, 0.1]
+  }
+]
